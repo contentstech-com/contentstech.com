@@ -2,6 +2,7 @@
 <meta charset=utf-8>
 <link rel=icon href=favicon.svg>
 <style>
+/* overall layout */
 body {
   margin: 0;
   display: grid;
@@ -19,31 +20,32 @@ body {
   color: #060001;
 }
 
-nav {
-  background: url(bg.jpg);
+/* background video */
+nav, .logo {
+  background: url(bg.avif);
   background-size: cover;
   background-position: center;
-  padding: 0.5rem 1rem;
 }
+.blur {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* text container */
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1rem;
-}
-nav img {
-  height: 2rem;
+  padding: 0.5rem 1rem;
 }
 
+/* nav */
+nav img { height: 2rem; }
+/* main */
 .logo {
   margin: 0 1rem;
-
-  background: url(bg.jpg);
-  background-size: cover;
-  background-position: center;
-
   mask: url(mask.svg) center / contain no-repeat;
 }
-
 main {
   justify-self: center;
 }
@@ -51,7 +53,7 @@ main > p {
   max-width: 550px;
   text-align: center;
 }
-
+/* footer */
 footer {
   color: darkgray;
   padding-bottom: 2rem;
@@ -61,12 +63,16 @@ footer {
 </style>
 
 <nav>
-  <div class=container>
-    <img alt=logo src=logo.svg>
+  <div class=blur>
+    <div class=container>
+      <img alt=logo src=logo.svg>
+    </div>
   </div>
 </nav>
 
-<div class=logo></div>
+<div class=logo>
+  <div class=blur></div>
+</div>
 
 <main>
   <p>We are committed to financial creativity, frontier technology, artistry,
