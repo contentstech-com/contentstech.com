@@ -20,16 +20,18 @@ body {
   color: #060001;
 }
 
-/* background video */
-nav, .logo {
+/* video background */
+.bg {
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
   background: url(bg.avif);
   background-size: cover;
   background-position: center;
-}
-.blur {
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
+  filter: blur(10px);
+  z-index: -1;
 }
 
 /* text container */
@@ -40,19 +42,17 @@ nav, .logo {
 }
 
 /* nav */
+nav { overflow: hidden; position: relative; }
 nav img { height: 2rem; }
 /* main */
-.logo {
+.mask {
   margin: 0 1rem;
+  overflow: hidden;
   mask: url(mask.svg) center / contain no-repeat;
+  position: relative;
 }
-main {
-  justify-self: center;
-}
-main > p {
-  max-width: 550px;
-  text-align: center;
-}
+main { padding: 0 2rem; justify-self: center; }
+main > p { max-width: 550px; text-align: center; }
 /* footer */
 footer {
   color: darkgray;
@@ -63,16 +63,11 @@ footer {
 </style>
 
 <nav>
-  <div class=blur>
-    <div class=container>
-      <img alt=logo src=logo.svg>
-    </div>
-  </div>
+  <div class=bg></div>
+  <div class=container><img alt=logo src=logo.svg></div>
 </nav>
 
-<div class=logo>
-  <div class=blur></div>
-</div>
+<div class=mask><div class=bg></div></div>
 
 <main>
   <p>We are committed to financial creativity, frontier technology, artistry,
