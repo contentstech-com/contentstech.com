@@ -9,15 +9,13 @@ body {
   display: grid;
   grid:
     '.' auto
-    '.' 10rem
     '.' 1fr
     '.' auto;
-  gap: 4rem;
 
   min-height: 100svh;
 
   font-family: sans-serif;
-  background: #f9f9f9;
+  background: #060001;
   color: #060001;
 }
 
@@ -56,15 +54,25 @@ nav { overflow: hidden; position: relative; }
 nav img { height: 2rem; }
 /* main */
 .mask {
-  margin: 0 1rem;
+  margin: 4rem 1rem 5rem;
+  height: 10rem;
   overflow: hidden;
   mask: url(mask.svg) center / contain no-repeat;
   position: relative;
 }
-main { padding: 0 2rem; justify-self: center; }
-main > p { max-width: 550px; text-align: center; }
+main {
+  padding: 0 2rem;
+  background: #f9f9f9;
+}
+main > p {
+  max-width: 550px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* footer */
 footer {
+  background: #f9f9f9;
   color: darkgray;
   padding-bottom: 2rem;
   font-size: 0.75rem;
@@ -78,12 +86,12 @@ footer {
   <div class=container><img alt=logo src=logo.svg></div>
 </nav>
 
-<div class=mask>
-  <div class=black></div>
-  <div class=bg></div>
-</div>
-
 <main>
+  <div class=mask>
+    <div class=black></div>
+    <div class=bg></div>
+  </div>
+
   <p>We are committed to financial creativity, frontier technology, artistry,
   entrepreneurship, and providing innovative opportunities for artists and
   creators.</p>
