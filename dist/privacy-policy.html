@@ -1,0 +1,120 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta name=viewport content=width=device-width,initial-scale=1.0,viewport-fit=cover>
+<meta name=keywords content="콘텐츠테크놀로지스,콘텐츠테크놀러지스,컨텐츠테크놀로지스,컨텐츠테크놀러지스">
+<title>Contents Technologies</title>
+<link rel=icon href='data:image/svg+xml,
+  <svg fill="none" height="285" viewBox="0 0 285 285" width="285" xmlns="http://www.w3.org/2000/svg"><rect fill="%23fff" height="285" rx="50" width="285"/><g fill="%23060001"><path d="m183.405 64h-10.8c-.332 0-.6.2679-.6.5999v5.4001 12 12 12 9c0 1.657-1.344 3-3 3h-8.999-9.699-2.3-11.413c-.331 0-.6.268-.6.6v10.8c0 .332.269.6.6.6h11.413 2.3 9.699 11.999 6c3.313 0 6-2.687 6-6v-6-12-12-12-12-5.4001c0-.332-.268-.5999-.6-.5999z"/><path d="m261.4 118h-5.4-11.999-11.999-12-8.999c-1.657 0-3-1.343-3-3v-9-12-6-5.4001c0-.332-.268-.5999-.6-.5999h-10.799c-.332 0-.6.2679-.6.5999v5.4001 6 12 12 6c0 3.313 2.686 6 5.999 6h6 11.999 12 11.999 11.999 5.4c.332 0 .6-.268.6-.6v-10.8c0-.332-.268-.6-.6-.6z"/><path d="m69.9945 118h1.4533 10.562 11.9993 11.9989 12 5.401c.33 0 .598.268.598.6v10.8c0 .331-.268.6-.598.6h-5.401-12-11.9989-11.9993-10.562-1.4373-.0133c-19.7042 0-35.7006 15.835-35.9846 35.472v.528h-.0133v12h.0133v12 12 5.4c0 .331-.2679.6-.5986.6h-10.8007c-.3306 0-.6-.269-.6-.6v-5.4-12-12h-.0133v-12h.0133v-.521c.0427-3.959.5547-7.805 1.5-11.479 1.0959-4.26 2.7745-8.284 4.925-12 1.6026-2.769 3.4705-5.364 5.5743-7.748 1.3293-1.504 2.7492-2.924 4.2544-4.252 2.3839-2.102 4.9771-3.969 7.7449-5.57 3.7158-2.15 7.7396-3.826 11.9993-4.92 3.8305-.986 7.8449-1.51 11.9833-1.51h.016z"/><path d="m243.401 142h-5.386-.014-5.986-11.999-12-5.999c-3.313 0-6 2.687-6 6v6 12 12 12 12 5.4c0 .332.268.6.6.6h10.799c.331 0 .6-.268.6-.6v-5.4-12-12-12-9.132c.071-1.595 1.375-2.868 2.987-2.868h9.013 11.999 5.986.014 5.386c.332 0 .6-.268.6-.6v-10.8c0-.332-.268-.6-.6-.6z"/><path d="m177.992 142h-6-11.999-12-11.999-11.999-5.4c-.331 0-.6.268-.6.6v10.8c0 .332.269.6.6.6h5.4 11.999 11.999 12 9.012c1.611 0 2.916 1.273 2.987 2.867v9.133 12 6 5.4c0 .332.269.6.6.6h10.799c.331 0 .6-.268.6-.6v-5.4-6-12-12-6c0-3.313-2.686-6-5.999-6z"/><path d="m57.9986 187.814v-9.815-12c0-6.625 5.369-11.996 11.9953-11.998h.004l11.9993-.002h11.9993 11.3995c.332 0 .6-.268.6-.598v-10.802c0-.33-.268-.6-.6-.6h-11.3995-11.9993-11.9993c-4.3731 0-8.4689 1.176-11.9993 3.22-3.6398 2.107-6.6743 5.14-8.7809 8.782-2.0438 3.53-3.2184 7.626-3.2184 12v11.998 9.815l.0133 2.187c0 4.372 1.1759 8.468 3.2185 12 2.1039 3.636 5.133 6.666 8.7675 8.773.004.003.0093.005.0133.008 3.5265 2.04 7.6182 3.215 11.986 3.217v.002h.0133c-.0013 0-.0026 0-.004-.002h11.99 11.9993 11.3995c.332 0 .6-.268.6-.598v-10.802c0-.33-.268-.6-.6-.6h-11.3995-11.9993-11.9993c-6.6263 0-11.9993-5.372-11.9993-12v.002z"/></g></svg>
+'>
+<style>
+/* overall layout */
+body {
+  margin: 0;
+  display: grid;
+  grid:
+    '.' auto
+    '.' 1fr
+    '.' auto;
+
+  min-height: 100svh;
+
+  font-family: sans-serif;
+  background: #060001;
+  color: #060001;
+}
+
+/* text container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+}
+
+/* nav */
+nav { overflow: hidden; position: relative; }
+nav img { height: 2rem; }
+main {
+  padding: 7rem 2rem;
+  background: #f9f9f9;
+  align-content: center;
+}
+main > p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin: 0.5rem 0 0;
+}
+main > h2 {
+  margin: 2rem 0 0;
+}
+main > :is(h1, h2, p) {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  /*font-weight: lighter;
+  line-height: 1.4;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;*/
+}
+/* footer */
+footer {
+  background: #f9f9f9;
+  color: darkgray;
+  padding-bottom: 2rem;
+  font-size: 0.75rem;
+  text-align: right;
+}
+</style>
+
+<nav>
+  <div class=black></div>
+  <div class=bg></div>
+  <div class=container><img alt=logo src='data:image/svg+xml,
+    <svg fill="none" height="151" viewBox="0 0 241 151" width="241" xmlns="http://www.w3.org/2000/svg"><g fill="%23f9f9f9"><path d="m162.129.0573711h-10.8c-.332 0-.6.2679349-.6.5999349v5.400064 12.00003 12 12 9c0 1.6573-1.344 3-3 3h-9-9.7-2.3-11.414c-.33 0-.6.2679-.6.5999v10.8001c0 .332.27.6.6.6h11.414 2.3 9.7 12 6c3.313 0 6-2.6867 6-6v-6-12-12-12-12.00003-5.400064c0-.332-.268-.5999349-.6-.5999349z"/><path d="m240.129 54.0574h-5.4-12-12-12-9c-1.658 0-3-1.3427-3-3v-9-12-6-5.4001c0-.332-.268-.5999-.6-.5999h-10.8c-.332 0-.6.2679-.6.5999v5.4001 6 12 12 6c0 3.3133 2.686 6 6 6h6 12 12 12 12 5.4c.332 0 .6-.268.6-.6v-10.8001c0-.332-.268-.5999-.6-.5999z"/><path d="m48.7119 54.0576h1.4533 10.5627 12 12 12 5.4011c.331 0 .599.268.599.6v10.8c0 .3307-.268.6-.599.6h-5.4011-12-12-12-10.5627-1.4373-.0134c-19.7053 0-35.7026 15.8347-35.9866 35.4724v.528h-.0134v12h.0134v12 12 5.4c0 .33-.268.6-.5986.6h-10.8014c-.330665 0-.600015-.27-.600015-.6v-5.4-12-12h-.013346v-12h.013346v-.522c.042667-3.9584.554665-7.8051 1.499995-11.4784 1.096-4.26 2.77471-8.284 4.92538-12 1.60267-2.7693 3.47064-5.364 5.57464-7.748 1.3293-1.504 2.7493-2.924 4.2546-4.252 2.384-2.1027 4.9774-3.9694 7.7454-5.5707 3.716-2.1493 7.74-3.8253 12-4.92 3.8306-.9853 7.8453-1.5093 11.984-1.5093h.016z"/><path d="m222.129 78.0574h-5.387-.013-5.987-12-12-6c-3.313 0-6 2.6867-6 6v6 11.9996 12 12 12 5.4c0 .332.268.6.6.6h10.8c.331 0 .6-.268.6-.6v-5.4-12-12-12-9.1317c.071-1.5946 1.375-2.8679 2.987-2.8679h9.013 12 5.987.013 5.387c.332 0 .6-.268.6-.6v-10.8c0-.332-.268-.6-.6-.6z"/><path d="m156.715 78.0574h-6-12-12-12-12-5.3998c-.3306 0-.6.268-.6.6v10.8c0 .332.2694.6.6.6h5.3998 12 12 12 9.014c1.61 0 2.916 1.2733 2.986 2.8666v9.133 12 6 5.4c0 .332.27.6.6.6h10.8c.331 0 .6-.268.6-.6v-5.4-6-12-11.9996-6c0-3.3133-2.686-6-6-6z"/><path d="m36.7152 123.871v-9.814-12c0-6.6255 5.3694-11.9962 11.996-11.9989h.004l12-.0013h12 11.4001c.332 0 .5999-.2679.5999-.5986v-10.8014c0-.3306-.2679-.6-.5999-.6h-11.4001-12-12c-4.3733 0-8.4693 1.176-12 3.22-3.64 2.1067-6.6747 5.14-8.7813 8.7813-2.044 3.5307-3.2187 7.6267-3.2187 11.9999v11.999 9.814l.0134 2.187c0 4.372 1.176 8.468 3.2186 12 2.104 3.636 5.1333 6.667 8.768 8.773.004.003.0094.006.0134.008 3.5266 2.04 7.6186 3.215 11.9866 3.218v.001h.0134c-.0014 0-.0027 0-.004-.001h11.9906 12 11.4001c.332 0 .5999-.268.5999-.599v-10.801c0-.331-.2679-.6-.5999-.6h-11.4001-12-12c-6.6267 0-12-5.372-12-12v.001z"/></g></svg>
+  '></div>
+</nav>
+
+<main>
+
+<h1 id="privacy-policy">Privacy Policy</h1>
+<h2 id="introduction">Introduction</h2>
+<p>At Contents Technologies, we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, and share your personal information when you use our app, and outlines your rights in relation to your personal data.</p>
+<p>As part of providing the Contents Technologies platform and facilitating video monetization through YouTube Shorts, we collect and process personal data, including the use of cookies, as outlined in this Privacy Policy.</p>
+<p>Contents Technologies adheres to all relevant data protection regulations, including the <strong>General Data Protection Regulation (GDPR)</strong> and the <strong>California Consumer Privacy Act (CCPA)</strong>, where applicable.</p>
+<p>If you have any questions about this policy or your data, please contact us at: <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#99;&#x6f;&#110;&#116;&#97;&#x63;&#x74;&#64;&#x63;&#x6f;&#x6e;&#116;&#x65;&#110;&#x74;&#115;&#116;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;">&#99;&#x6f;&#110;&#116;&#97;&#x63;&#x74;&#64;&#x63;&#x6f;&#x6e;&#116;&#x65;&#110;&#x74;&#115;&#116;&#101;&#x63;&#104;&#46;&#99;&#111;&#x6d;</a></p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h1 id="privacy-policy-for-contents-technologies">Privacy Policy for Contents Technologies</h1>
+<p>Effective Date: 2025-12-03</p>
+<h2 id="data-we-collect">Data We Collect</h2>
+<p>At the moment, we do not collect any personal information other than the technical log data that is collected automatically (such as the requester’s IP and browser information).</p>
+<h2 id="how-we-use-your-data">How We Use Your Data</h2>
+<p>We analyze collected logs to enhance the functionality, security, and performance of this website.</p>
+<h2 id="sharing-your-information">Sharing Your Information</h2>
+<p>Contents Technologies currently does not share your data with third-party service providers. However, we may share your data if required by law or if necessary to protect the rights and safety of Contents Technologies and its users.</p>
+<h2 id="data-security">Data Security</h2>
+<p>We use industry-standard security measures to protect your data, including encryption and secure servers.</p>
+<h2 id="cookies-and-tracking-technologies">Cookies and Tracking Technologies</h2>
+<p>We currently does not use cookies or similar technologies to track users.</p>
+<h2 id="data-retention">Data Retention</h2>
+<p>We retain your personal information for as long as necessary to fulfill the purposes outlined in this policy, or as required by law.</p>
+<h2 id="third-party-links-and-services">Third-Party Links and Services</h2>
+<p>Contents Technologies may link to external websites or services. We are not responsible for the privacy practices of these third-party platforms. We recommend reviewing their privacy policies before interacting with them.</p>
+<h2 id="contact-info">Contact info</h2>
+<p>This privacy policy is designed to ensure transparency in how we handle your personal information and to protect your rights as a user of this website.</p>
+<p>For any questions about this Privacy Policy, or if you wish to exercise your rights, please contact us at:</p>
+<p><strong>Email:</strong> <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#99;&#x6f;&#110;&#116;&#97;&#x63;&#116;&#x40;&#99;&#111;&#x6e;&#x74;&#x65;&#110;&#x74;&#115;&#116;&#101;&#x63;&#104;&#x2e;&#x63;&#x6f;&#x6d;">&#99;&#x6f;&#110;&#116;&#97;&#x63;&#116;&#x40;&#99;&#111;&#x6e;&#x74;&#x65;&#110;&#x74;&#115;&#116;&#101;&#x63;&#104;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+
+</main>
+
+<footer>
+  <div class=container>
+    <p>© Contents Technologies Co., Ltd.</p>
+    <address>
+      4F, 69 Seongsui-ro, Seongdong-gu, Seoul, 04781, Republic of Korea<br>
+      <a href=mailto:contact@contentstech.com>contact@contentstech.com</a>
+    </address>
+  </div>
+</footer>
